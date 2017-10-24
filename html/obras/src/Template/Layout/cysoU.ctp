@@ -1,0 +1,155 @@
+<?php
+/**
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @since         0.10.0
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
+
+$cakeDescription = 'CakePHP: the rapid development php framework';
+?>
+<!DOCTYPE html>
+<html class="hinterior">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CySo - Sistema de Gestión y Seguimiento de Obras</title>
+    <script type="text/javascript" src="/obras/webroot/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="/obras/webroot/js/jsplug.js"></script>
+    <?php
+    echo $this->Html->css('/webroot/css/interior.css');
+    echo $this->Html->css('/webroot/css/sidebar.css');
+    ?>
+</head>
+<body class="interior">
+    <?php if($isAuth): ?>
+        <div class="containerobraUA">
+    <?php else: ?>
+        <?php if($isCons): ?>
+            <div class="containerobraUC">
+        <?php else: ?>
+            <div class="containerobraU">
+        <?php endif; ?>
+    <?php endif; ?>
+        <?php if($isAuth): ?>
+            <div id="sidebarA">
+            <?php else: ?>
+            <div id="sidebar">
+            <?php endif; ?>
+                <ul>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <img src="/obras/webroot/img/cons.png" alt="Construcciones">
+                                <br>Contrucciones
+                            </a>
+                        </div>                  
+                    </li>
+                    <li><a href="/obras/construcciones/lista_construcciones">Obras</a></li>
+                    <?php if($isAuth): ?>
+                    <li><a href="/obras/construcciones/add">Añadir Obra</a></li>
+                    <?php endif; ?>
+                    <li><a href="/obras/constructores/index">Constructores</a></li>
+                </ul>
+            </div>
+            <?php if($isAuth): ?>
+            <div id="sidebar2A">
+            <?php else: ?>
+            <div id="sidebar2">
+            <?php endif; ?>
+                <ul>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <img src="/obras/webroot/img/den.png" alt="Denuncias">
+                                <br>Denuncias
+                            </a>
+                        </div>                  
+                    </li>
+                    <li><a id="enviadas" href="/obras/denuncias/index">Enviadas</a></li>
+                    <li><a href="/obras/construcciones/lista_construcciones">Denunciar</a></li>
+                </ul>
+            </div>
+            <?php if($isAuth): ?>
+            <div id="sidebar3">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="#">
+                                    <img src="/obras/webroot/img/users.png" alt="Denuncias">
+                                    <br>Usuarios
+                                </a>
+                            </div>                  
+                        </li>
+                        <li><a href="/obras/usuarios/add">Añadir</a></li>
+                        <li><a href="/obras/usuarios/inspectors">Ver Inspectores</a></li>
+                    </ul>
+            </div>
+            <?php endif; ?>
+                <div class="main-content">
+                    <nav class="navegadorobra navegadorobraC">
+                        <ul>
+                            <li>
+                            <?php if($isAuth): ?>
+                                <a data-toggle=".containerobraUA" class="sidebar-toggle">
+                                <?php else: ?>
+                                    <?php if($isCons): ?>
+                                        <a data-toggle=".containerobraUC" class="sidebar-toggle">
+                                    <?php else: ?>                       
+                                        <a data-toggle=".containerobraU" class="sidebar-toggle">
+                                    <?php endif; ?>
+                            <?php endif; ?>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </a>
+                            </li>
+                            <li>
+                            <?php if($isAuth): ?>
+                            <a data-toggle=".containerobraUA" class="menu">Menú</a>
+                                <?php else: ?>
+                                    <?php if($isCons): ?>
+                                        <a data-toggle=".containerobraUC" class="menu">Menú</a>
+                                    <?php else: ?>                       
+                                        <a data-toggle=".containerobraU" class="menu">Menú</a>
+                                    <?php endif; ?>
+                            <?php endif; ?>
+                            </li>
+                            <li>
+                                <?php if($logged_in): ?>
+                                </a><?php echo $this->Html->link('Salir', array('controller' => 'Usuarios', 'action'=>'logout' )); ?><a id='NIF'><?php echo $usuarios_NIF; ?>
+                            <?php else: ?>
+                            <!--<a id="izqM" href="/obras/usuarios/login" class="acceso">Acceder</a>-->
+                                <?php echo $this->Html->link('Acceder', array('controller' => 'Usuarios', 'action'=>'login' )); ?>
+                            <?php endif; ?>
+                                <!--<a href="/obras/usuarios/login" class="acceso">Acceder</a>-->
+                            </li>
+                            <?php if(!$isAuth && !$isCons): ?>
+                            <li>
+                                <a href="/obras/construcciones/lista_construcciones" class="acceso">Denunciar</a>
+                            </li>
+                            <?php endif; ?>
+                            <li>
+                                <a id="izq" href="/obras/usuarios/index">
+                                    <div class="logo">
+                                        <img src="/obraswebroot/img/logo.png" alt="Inicio">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="swipe-area"></div>
+                    <?php echo $this->fetch('content'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#3f51b5</color>
+    <color name="colorDen">#19d6b0</color>
+    <color name="colorDenDark">#24564c</color>
+    <color name="colorDenAccent">#5CDDC3</color>
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="LoginAccent">#2290c9</color>
+    <color name="InfoPrimary">#1BD1E0</color>
+    <color name="InfoSecondary">#18aeba</color>
+    <color name="InfoAccent">#7da2aa</color>
+    <color name="CardBackground">#e2e2e2</color>
+
+
+</resources>

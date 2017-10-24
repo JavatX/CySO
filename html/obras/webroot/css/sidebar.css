@@ -1,0 +1,517 @@
+@font-face {
+    font-family: 'GenericaB';
+    src: url('/obras/webroot/fonts/Cicle_Semi.ttf');
+}
+
+/*@media only screen and (min-width: 961px) {*/
+    #sidebar {
+        background: #1BD1E0;
+        position: absolute;
+        width: 15em;
+        height: 100%;
+        right: -15em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    #sidebar ul {
+        margin: 0;
+        padding: 1.25em;
+        list-style: none;
+    }
+    #sidebar ul li:first-child {
+        margin-bottom: 0.125em;
+        font-family: "GenericaB";
+    }
+    #sidebar ul li {
+        margin-bottom: -1.25em;
+        font-family: "Generica";
+    }
+
+    #sidebar ul li a {
+        padding: 0.938em 0.25em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        /*border-bottom: 1px solid #196c96;*/
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar ul li div a img{
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+        padding-top: 1.125em;
+    }
+    #sidebar ul li div:hover a img{
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+        content: url("/obras/webroot/img/consS.png");
+    }
+    #sidebar ul li:hover a {
+        color: #7da2aa;
+        /*background: #196c96;*/
+    }
+
+    #sidebar2{
+        background: #19D6B0;
+        position: absolute;
+        width: 15.000em;
+        height: 100%;
+        right: -30.000em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    #sidebar2 ul {
+        margin: 0;
+        padding: 1.25em;
+        list-style: none;
+    }
+    #sidebar2 ul li:first-child {
+        margin-bottom: 0.125em;
+        font-family: "GenericaB";
+    }
+    #sidebar2 ul li {
+        margin-bottom: -1.25em;
+        font-family: "Generica";
+    }
+
+    #sidebar2 ul li a {
+        padding: 0.938em 1.25em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        /*border-bottom: 1px solid #196c96;*/
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar2 ul li div a img{
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+        padding-top: 1.125em;
+    }
+    #sidebar2 ul li div:hover a img{
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+        content: url("/obras/webroot/img/denS.png");
+    }
+    #sidebar2 ul li:hover a {
+        color: #7da2aa;
+        /*background: #196c96;*/
+    }
+
+    #sidebar3{
+        background: #2290C9;
+        position: absolute;
+        width: 15.000em;
+        height: 100%;
+        right: -15.000em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    #sidebar3 ul {
+        margin: 0;
+        padding: 0.125em;
+        list-style: none;
+    }
+    #sidebar3 ul li:first-child {
+        margin-bottom: 0.125em;
+        font-family: "GenericaB";
+    }
+    #sidebar3 ul li {
+        margin-bottom: -1.25em;
+        font-family: "Generica";
+    }
+
+    #sidebar3 ul li a {
+        padding: 0.938em 1.25em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        /*border-bottom: 1px solid #196c96;*/
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar3 ul li div a img{
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+        padding-top: 1.125em;
+    }
+    #sidebar3 ul li div:hover a img{
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+        content: url("/obras/webroot/img/usersS.png");
+    }
+    #sidebar3 ul li:hover a {
+        color: #7da2aa;
+        /*background: #196c96;*/
+    }
+
+    /*Admin sidebar*/
+    #sidebarA {
+        background: #1BD1E0;
+        position: absolute;
+        width: 15em;
+        height: 100%;
+        right: -30em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    #sidebarA ul {
+        margin: 0;
+        padding: 1.25em;
+        list-style: none;
+    }
+    #sidebarA ul li:first-child {
+        margin-bottom: 0.125em;
+        font-family: "GenericaB";
+    }
+    #sidebarA ul li {
+        margin-bottom: -1.25em;
+        font-family: "Generica";
+    }
+
+    #sidebarA ul li a {
+        padding: 0.938em 0.25em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        /*border-bottom: 1px solid #196c96;*/
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebarA ul li div a img{
+        padding-bottom: 0.313em;
+    }
+    #sidebarA ul li div:hover a img{
+        padding-bottom: 0.313em;
+        content: url("/obras/webroot/img/consS.png");
+    }
+    #sidebarA ul li:hover a {
+        color: #7da2aa;
+        /*background: #196c96;*/
+    }
+
+    #sidebar2A{
+        background: #19D6B0;
+        position: absolute;
+        width: 15.000em;
+        height: 100%;
+        right: -45.000em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    #sidebar2A ul {
+        margin: 0;
+        padding: 0.125em;
+        list-style: none;
+    }
+    #sidebar2A ul li:first-child {
+        margin-bottom: 0.125em;
+        font-family: "GenericaB";
+    }
+    #sidebar2A ul li {
+        margin-bottom: -1.25em;
+        font-family: "Generica";
+    }
+
+    #sidebar2A ul li a {
+        padding: 0.938em 1.25em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        /*border-bottom: 1px solid #196c96;*/
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar2A ul li div a img{
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+        padding-top: 1.125em;
+    }
+    #sidebar2A ul li div:hover a img{
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+        padding-top: 1.125em;
+        content: url("/obras/webroot/img/denS.png");
+    }
+    #sidebar2A ul li:hover a {
+        color: #7da2aa;
+        /*background: #196c96;*/
+    }
+/*}*/
+/*@media only screen and (min-width: 641px) and (max-width: 960px) { 
+    #sidebar {
+        background: #2290c9;
+        position: absolute;
+        width: 100%;
+        height: 3.125em;
+        top: -3.125em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    #sidebar ul {
+        margin: 0;
+        display: inline;
+        padding: 1.25em;
+        list-style: none;
+    }
+    #sidebar ul li:first-child {
+        float: left;
+        padding-left: 2.625em;
+        padding-right: 1em;
+        margin-left: 1.25em;
+        font-family: "GenericaB";
+    }
+    #sidebar ul li {
+        float: left;
+        margin-left: -1.25em;
+        font-family: "Generica";
+    }
+
+    #sidebar ul li a {
+        padding: 0.938em 1.25em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar ul li div a img{
+        display: none;
+    }
+
+    #sidebar ul li div a{
+        display: none;
+    }
+
+    #sidebar ul li:hover a {
+        color: #7da2aa;
+        
+    }
+
+    #sidebar2{
+        background: #1BD1E0;
+        position: absolute;
+        height: 3.125em;
+        width: 100%;
+        top: -6.250em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    #sidebar2 ul {
+        margin: 0;
+        display: inline;
+        padding: 0.125em;
+        list-style: none;
+    }
+    #sidebar2 ul li:first-child {
+        padding-left: 4em;
+        padding-top: 1em;
+        padding-right: 3.25em;;
+        float: left;
+        margin-left: 0.125em;
+        font-family: "GenericaB";
+    }
+    #sidebar2 ul li {
+        float: left;
+        padding-top: 1em;
+        margin-left: -1.25em;
+        font-family: "Generica";
+    }
+
+    #sidebar2 ul li a {
+        padding-left: 0.938em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar2 ul li div a img{
+        display: none;
+    }
+    #sidebar2 ul li div a{
+        display: none;
+    }
+    #sidebar2 ul li:hover a {
+        color: #7da2aa;
+        
+    }
+}
+@media only screen and (max-width: 640px) { 
+    #sidebar {
+        background: #2290c9;
+        position: absolute;
+        width: 100%;
+        height: 3.125em;
+        top: -3.125em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    #sidebar ul {
+        
+        margin: 0 auto;
+        display: table;
+        list-style: none;
+    }
+    #sidebar ul li:first-child {
+        display: none;
+        float: left;
+        padding-left: 1.6em;
+        padding-right: 1em;
+        margin-left: 1.25em;
+        font-family: "GenericaB";
+    }
+    #sidebar ul li {
+        
+        padding-top: 1em;
+        padding-right: 1em;
+        float: left;
+        font-family: "Generica";
+    }
+
+    #sidebar ul li:last-child {
+        float: left;
+        margin-left: 3.4em;
+        font-family: "Generica";
+    }
+
+    #sidebar ul li a {
+        
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar ul li div a img{
+        display: none;
+        padding-left: 0.125em;
+        padding-bottom: 0.313em;
+    }
+
+    #sidebar ul li:hover a {
+        color: #7da2aa;
+        
+    }
+
+    #sidebar2{
+        background: #1BD1E0;
+        position: absolute;
+        height: 3.125em;
+        width: 100%;
+        top: -6.250em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    #sidebar2 ul {
+        
+        margin: 0 auto;
+        display: table;
+        list-style: none;
+    }
+    #sidebar2 ul li:first-child {
+        display: none;
+        padding-left: 3em;
+        padding-top: 1em;
+        padding-right: 3.25em;;
+        float: left;
+        margin-left: 0.125em;
+        font-family: "GenericaB";
+    }
+
+    #sidebar2 ul #enviadas{
+        visibility: hidden;
+    }
+    #sidebar2 ul #enviadas:after{
+        content: "Denuncias enviadas";
+        visibility: visible;
+    }
+    #sidebar2 ul li {
+        
+        padding-right: 6em;
+        padding-top: 1em;
+        font-family: "Generica";
+    }
+    #sidebar2 ul li .aDen {
+        padding-left: 0.938em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: none;
+        
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar2 ul li a {
+        
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+
+    
+
+    #sidebar2 ul li div a img{
+        display: none;
+    }
+
+    #sidebar2 ul li:hover a {
+        color: #7da2aa;
+        
+    }
+}*/

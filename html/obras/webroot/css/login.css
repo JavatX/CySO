@@ -1,0 +1,133 @@
+
+
+/* Typography */
+h1#title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 3.2em;
+  color: white;
+  text-shadow: 0 0 0.625em rgba(0,0,0,0.8);
+  margin: 0 auto;
+  padding-top: 11.250em;
+  max-width: 18.750em;
+  text-align: center;
+  position: relative;
+  top: 0;
+}
+
+h1#title span span {
+  font-weight: 400;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.063em;
+  font-size: 1.4em;
+  line-height: 2.8em;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: #aeaeae;
+}
+
+p.small {
+  font-size: 0.8em;
+  margin: 1.25em 0 0;
+}
+
+
+/* Layout */
+.cont {
+  margin: 10.313em auto;
+}
+
+.login-box {
+  background-color: white;
+  max-width: 21.250em;
+  margin: 0 auto;
+  position: relative;
+  top: 5.000em;
+  padding-bottom: 1.875em;
+  border-radius: 0.313em;
+  box-shadow: 0 0.313em 3.125em rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.login-box .box-header {
+  background-color: #2290c9;
+  margin-top: 0;
+  border-radius: 0.313em 0.313em 0 0;
+}
+
+.login-box label {
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #888;
+  letter-spacing: 0.063em;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+.login-box input {
+  margin-bottom: 1.25em;
+  padding: 0.5em;
+  border: 0.063em solid #ccc;
+  border-radius: 0.125em;
+  font-size: 0.9em;
+  color: #2290c9;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #2290c9;
+  transition: 0.5s;
+  color: #2290c9;
+}
+
+.login-box button {
+  margin-top: 0;
+  border: 0;
+  border-radius: 0.125em;
+  color: white;
+  padding: 0.625em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.7em;
+  letter-spacing: 0.063em;
+  background-color: #2290c9;
+  cursor:pointer;
+  outline: none;
+}
+
+.login-box button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.login-box button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.selected {
+  color: #665851!important;
+  transition: 0.5s;
+}
+
+/* Animation Delay */
+#logo {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+}
+
+.login-box {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+}

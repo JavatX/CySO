@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    #RewriteBase /var/www/html/obras
+    RewriteCond %{REQUEST_FILENAME} !-f
+    rEWRITEcOND %{REQUEST_URI} !^(webroot/)?(img|css|js)/(.*)$
+    RewriteRule ^ index.php [L]
+</IfModule>

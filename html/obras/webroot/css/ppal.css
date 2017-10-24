@@ -1,0 +1,861 @@
+@font-face {
+    font-family: 'RobotoT';
+    src: url('/obras/webroot/fonts/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: 'RobotoL';
+    src: url('/obras/webroot/fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'Generica';
+    src: url('/obras/webroot/fonts/Cicle_Fina.ttf');
+}
+@font-face {
+    font-family: 'GenericaB';
+    src: url('/obras/webroot/fonts/Cicle_Semi.ttf');
+}
+
+/*@media only screen and (min-width: 961px) {*/
+    body, html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        font-family: helvetica;
+        font-weight: 100;
+    }
+    header{
+        width: 100%;
+    }
+
+    .navegador{
+        float: inherit;
+        padding-top: 5%;
+    }
+    .navegador ul
+    {
+        list-style:none;
+        float:left;
+        width:95%;
+    }
+
+    .left { 
+        float:left; 
+        width:50%; 
+        clear:left; 
+    }
+
+    .right { 
+        float:right; 
+        width:50%; 
+        clear:right 
+    }
+
+    .navegador ul li{
+        display: inline;
+    }
+    .navegador ul li a
+    {
+        color: white;
+        float: right;
+        padding-right: 1%; 
+        text-decoration:none;
+    }
+    .navegador ul li #NIF:hover
+    {
+        color: white;
+        cursor: inherit;
+        
+    }
+    .navegador ul li a:hover
+    {
+        color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .navegador ul li a#izq
+    {
+
+        float: left;
+    }
+    .navegador ul li a div
+    {
+        float: left;
+
+        margin-top: -4.688em;
+        margin-left: -2.188em;
+    }
+
+    .navegador ul li a div:hover
+    {
+        content: url("/obras/webroot/img/logo2.png");
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .menu:hover{
+        color: white;
+    }
+
+    .titulo{
+        font-size: 120%;
+        color: white;
+        float: inherit;
+    }
+
+    .descripcion{
+        text-align: center;
+        padding: 2%;
+        width: 95%;
+    }
+
+    .enlaces{
+        text-align: center;
+        margin: 2%;
+    }
+    .botones{
+        text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, 0.2);
+        font-family: inherit;
+        font-size: 100%;
+        padding: .5em 1em;
+        color: #7da2aa;
+        border: 0.063em solid #999;
+        border: 0 rgba(0,0,0,0);
+        background-color: #2d3035;
+        text-decoration: none;
+        border-radius: 0.938em;
+    }
+
+    .sig{
+        width: 35%;
+    }
+
+    .sig a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .sig:hover{
+        color: blue;
+    }
+
+    .pie
+    {
+        width:100%;
+        float:right;
+    }
+
+    .footer_msg
+    {
+        margin-top: 2.5em;
+        float: left;
+        margin-left: 5%;
+        font-size: 0.8em;
+        color: rgb(126, 126, 126);
+    }
+
+    .container, .containerA, .containerC {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        background: url('/obras/webroot/img/puenB.jpg') no-repeat;
+        background-position: center;
+        background-size: 175%;
+        -webkit-transition:  right 0.4s ease-in-out;
+        -moz-transition:  right 0.4s ease-in-out;
+        -ms-transition:  right 0.4s ease-in-out;
+        -o-transition:  right 0.4s ease-in-out;
+        transition:  right 0.4s ease-in-out;
+    }
+
+    .containerAc {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        background-color: #1C3B5F;
+    }
+    .containerA.open-sidebar {
+        right: 45em;
+    }
+    .containerC.open-sidebar {
+        right: 30em;
+    }
+    .container.open-sidebar {
+        right: 30em;
+    }
+    .swipe-area {
+        position: absolute;
+        width: 3.125em;
+        right: 0;
+        top: 0;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .main-content {
+        width: 100%;
+        height: 100%;
+        padding: 0.625em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        position: relative;
+    }
+    .main-content .content{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding-left: 3.750em;
+        width: 100%;
+    }
+    .main-content .content h1{
+        font-weight: 100;
+        padding-top: 11%;
+        color: #E6ECEE;
+        font-family: 'GenericaB';
+    }
+    .main-content .content p{
+        margin-top: 2%;
+        font-family: 'Generica';
+        width: 100%;
+        line-height: 175%;
+        color: #E6ECEE;
+    }
+    .main-content .sidebar-toggle {
+        display: block;
+        position: relative;
+        padding-top: 0.188em;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        transition-property: transform;
+    }
+
+    .main-content .bar{
+        display: block;
+        width: 1.125em;
+        margin-bottom: 0.188em;
+        height: 0.125em;
+        background-color: #fff;
+        border-radius: 0.063em;   
+    }
+    .main-content .bar:last-child{
+       margin-bottom: 0;   
+    }
+
+    .main-content .bar:hover{
+        background-color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+
+    .navegadorobra{
+        float: inherit;
+        padding-top: 5%;
+    }
+    .navegadorobra ul
+    {
+        list-style:none;
+        float:left;
+        width:95%;
+    }
+
+    .navegadorobra ul li{
+        display: inline;
+    }
+    .navegadorobra ul li a
+    {
+        color: black;
+        float: right;
+        padding-right: 1%; 
+        text-decoration:none;
+    }
+    .navegadorobra ul li a:hover
+    {
+        color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .navegadorobra ul li a#izq
+    {
+
+        float: left;
+    }
+    .navegadorobra ul li a div
+    {
+        float: left;
+        margin-top: -4.688em;
+        margin-left: -2.188em;
+        content: url("logoN.png");
+    }
+    .navegadorobra ul li a div:hover
+    {
+        content: url("logo2.png");
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .main-content .pie{
+    	display: none;
+    }
+/*}
+*/
+/*
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+    body, html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        font-family: helvetica;
+        font-weight: 100;
+    }
+    header{
+        width: 100%;
+    }
+
+    
+    .navegadorTablet{
+        background-color: #013767;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3.125em;
+    }
+    .navegadorTablet ul
+    {
+        list-style:none;
+        float:left;
+        width:93%;
+    }
+
+    .navegadorTablet ul li{
+        display: inline;
+    }
+
+    .navegadorTablet ul li a
+    {
+        color: white;
+        float: right;
+        padding-right: 1%; 
+        text-decoration:none;
+    }
+
+    .navegadorTablet ul li a:hover
+    {
+        color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .navegadorTablet ul li a#izq
+    {
+        float: left;
+    }
+    .navegadorTablet ul li a div
+    {
+        float: left;
+        margin-top: -0.688em;
+        margin-left: -2.188em;
+    }
+
+    .logo{
+        content: url("/obras/webroot/img/logoT.png");
+    }
+    .navegadorTablet ul li a div:hover
+    {
+        content: url("/obras/webroot/img/logoTV.png");
+        cursor: pointer; 
+        cursor: hand;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .titulo{
+        font-size: 120%;
+        color: white;
+        float: inherit;
+    }
+
+    .descripcion{
+        text-align: center;
+        padding: 2%;
+        width: 95%;
+    }
+
+    .enlaces{
+        text-align: center;
+        margin: 2%;
+    }
+    .botones{
+        text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, 0.2);
+        font-family: inherit;
+        font-size: 100%;
+        padding: .5em 1em;
+        color: #7da2aa;
+        border: 0.063em solid #999;
+        border: 0 rgba(0,0,0,0);
+        background-color: #2d3035;
+        text-decoration: none;
+        border-radius: 0.938em;
+    }
+
+    .sig{
+        width: 35%;
+    }
+
+    .sig a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .sig:hover{
+        color: blue;
+    }
+    
+    .pie
+    {
+        width:100%;
+        float:right;
+    }
+
+    .footer_msg
+    {
+        margin-top: 2.5em;
+        float: left;
+        margin-left: 5%;
+        font-size: 0.8em;
+        color: rgb(126, 126, 126);
+    }
+
+    .container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background: url('/obras/webroot/img/puenB.jpg') no-repeat;
+        background-position: center;
+        background-size: 250%;
+        -webkit-transition:  top 0.4s ease-in-out;
+        -moz-transition:  top 0.4s ease-in-out;
+        -ms-transition:  top 0.4s ease-in-out;
+        -o-transition:  top 0.4s ease-in-out;
+        transition:  top 0.4s ease-in-out;
+    }
+
+    .containerAc {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        background-color: ##013767;
+    }
+    .container.open-sidebar {
+        top: 9.375em;
+    }
+    .containerobra.open-sidebar {
+        top: 9.375em;
+    }
+    .swipe-area {
+        position: absolute;
+        height: 0.938em;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .main-content {
+        width: 100%;
+        height: 100%;
+        padding: 0.625em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        position: relative;
+    }
+    .main-content .content{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding-left: 3.750em;
+        padding-top: 3em;
+        width: 100%;
+    }
+    .main-content .content h1{
+        font-weight: 100;
+        padding-top: 11%;
+        color: #E6ECEE;
+        font-family: 'GenericaB';
+        
+    }
+    .main-content .content p{
+        margin-top: 2%;
+        font-family: 'Generica';
+        width: 100%;
+        line-height: 175%;
+        color: #E6ECEE;
+    }
+    .main-content .sidebar-toggle {
+        display: block;
+        position: relative;
+        padding-top: 0.188em;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        transition-property: transform;
+    }
+
+    .main-content .bar{
+        display: block;
+        width: 1.125em;
+        margin-bottom: 0.188em;
+        height: 0.125em;
+        background-color: #fff;
+        border-radius: 0.063em;   
+    }
+    .main-content .bar:last-child{
+       margin-bottom: 0;   
+    }
+
+    .main-content .bar:hover{
+        background-color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+
+    .navegadorobra{
+        float: inherit;
+        padding-top: 5%;
+    }
+    .navegadorobra ul
+    {
+        list-style:none;
+        float:left;
+        width:95%;
+    }
+
+    .navegadorobra ul li{
+        display: inline;
+    }
+    .navegadorobra ul li a
+    {
+        color: black;
+        float: right;
+        padding-right: 1%; 
+        text-decoration:none;
+    }
+    .navegadorobra ul li a:hover
+    {
+        color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .navegadorobra ul li a#izq
+    {
+
+        float: left;
+    }
+    .navegadorobra ul li a div
+    {
+        float: left;
+        margin-top: -4.688em;
+        margin-left: -2.188em;
+        content: url("logoN.png");
+    }
+    .navegadorobra ul li a div:hover
+    {
+        content: url("logo2.png");
+        cursor: pointer; 
+        cursor: hand;
+    }
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+    body, html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        font-family: helvetica;
+        font-weight: 100;
+    }
+    header{
+        width: 100%;
+    }
+
+    
+    .navegadorTablet{
+        background-color: #053362;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3.125em;
+    }
+    .navegadorTablet ul
+    {
+        list-style:none;
+        float:left;
+        width:87%;
+    }
+
+    .navegadorTablet ul li{
+        display: inline;
+    }
+    .navegadorTablet ul li a:hover
+    {
+        color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .navegadorTablet ul li a#izqM
+    {
+        display: none;
+        float: left;
+    }
+    .navegadorTablet ul li a#izq
+    {
+        float: left;
+    }
+    .navegadorTablet ul li a div
+    {
+        width: 80%;
+        float: left;
+        margin-top: -0.388em;
+        padding-left: 0.625em;
+        margin-left: -2.188em;
+    }
+    .logo{
+        content: url("/obras/webroot/img/logoT.png");
+    }
+    .navegadorTablet ul li a div:hover
+    {
+        content: url("/obras/webroot/img/logoTV.png");
+        cursor: pointer; 
+        cursor: hand;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .titulo{
+        font-size: 120%;
+        color: white;
+        float: inherit;
+    }
+
+    .descripcion{
+        text-align: center;
+        padding: 2%;
+        width: 95%;
+    }
+
+    .enlaces{
+        text-align: center;
+        margin: 2%;
+    }
+    .botones{
+        text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, 0.2);
+        font-family: inherit;
+        font-size: 100%;
+        padding: .5em 1em;
+        color: #7da2aa;
+        border: 0.063em solid #999;
+        border: 0 rgba(0,0,0,0);
+        background-color: #2d3035;
+        text-decoration: none;
+        border-radius: 0.938em;
+    }
+
+    .sig{
+        width: 35%;
+    }
+
+    .sig a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .sig:hover{
+        color: blue;
+    }
+    
+    .pie
+    {
+        width:100%;
+        float:right;
+    }
+
+    .footer_msg
+    {
+        margin-top: 2.5em;
+        float: left;
+        margin-left: 5%;
+        font-size: 0.8em;
+        color: rgb(126, 126, 126);
+    }
+
+    .container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background: url('/obras/webroot/img/puenB.jpg') no-repeat;
+        background-position: center;
+        background-size: 300%;
+        -webkit-transition:  top 0.4s ease-in-out;
+        -moz-transition:  top 0.4s ease-in-out;
+        -ms-transition:  top 0.4s ease-in-out;
+        -o-transition:  top 0.4s ease-in-out;
+        transition:  top 0.4s ease-in-out;
+    }
+
+    .containerAc {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        background-color: #013767;
+    }
+    .container.open-sidebar {
+        top: 9.375em;
+    }
+    .containerobra.open-sidebar {
+        top: 9.375em;
+    }
+    .swipe-area {
+        position: absolute;
+        height: 0.938em;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .main-content {
+        width: 100%;
+        height: 100%;
+        padding: 0.625em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        position: relative;
+    }
+    .main-content .content{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding-left: 1.750em;
+        padding-top: 3em;
+        width: 100%;
+    }
+    .main-content .content h1{
+        font-weight: 100;
+        padding-top: 11%;
+        color: #E6ECEE;
+        font-family: 'GenericaB';
+        
+    }
+    .main-content .content p{
+        margin-top: 2%;
+        font-family: 'Generica';
+        width: 100%;
+        line-height: 175%;
+        color: #E6ECEE;
+    }
+    .main-content .sidebar-toggle {
+        display: block;
+        position: relative;
+        padding-top: 0.188em;
+        float: right;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        transition-property: transform;
+    }
+
+    .main-content .bar{
+        display: block;
+        width: 1.125em;
+        margin-bottom: 0.188em;
+        height: 0.125em;
+        background-color: #fff;
+        border-radius: 0.063em;   
+    }
+    .main-content .bar:last-child{
+       margin-bottom: 0;   
+    }
+
+    .main-content .bar:hover{
+        background-color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+
+    .navegadorobra{
+        float: inherit;
+        padding-top: 5%;
+    }
+    .navegadorobra ul
+    {
+        list-style:none;
+        float:left;
+        width:95%;
+    }
+
+    .navegadorobra ul li{
+        display: inline;
+    }
+    .navegadorobra ul li a
+    {
+        color: black;
+        float: right;
+        padding-right: 1%; 
+        text-decoration:none;
+    }
+    .navegadorobra ul li a:hover
+    {
+        color: #7da2aa;
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .navegadorobra ul li a#izq
+    {
+
+        float: left;
+    }
+    .navegadorobra ul li a div
+    {
+        float: left;
+        margin-top: -4.688em;
+        margin-left: -2.188em;
+        content: url("logoN.png");
+    }
+    .navegadorobra ul li a div:hover
+    {
+        content: url("logo2.png");
+        cursor: pointer; 
+        cursor: hand;
+    }
+    .pie{
+    	background: #053362;
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    }
+    .pie a{
+    	color: white;
+	    text-decoration: none;
+	    margin: 0 auto;
+	    display: table;
+	    text-align: center;
+	    vertical-align: middle;
+    }
+}
+*/

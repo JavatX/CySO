@@ -1,0 +1,1888 @@
+@font-face {
+  font-family: 'RobotoT';
+  src: url('/obras/webroot/fonts/Roboto-Thin.ttf');
+}
+@font-face {
+  font-family: 'RobotoL';
+  src: url('/obras/webroot/fonts/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: 'Generica';
+  src: url('/obras/webroot/fonts/Cicle_Fina.ttf');
+}
+@font-face {
+  font-family: 'GenericaB';
+  src: url('/obras/webroot/fonts/Cicle_Semi.ttf');
+}
+/*@media only screen and (min-width: 961px) {*/
+  .interior, .hinterior{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: helvetica;
+    font-weight: 100;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  .titulo{
+    font-size: 120%;
+    color: white;
+    float: inherit;
+  }
+
+  .descripcion{
+    text-align: center;
+    padding: 2%;
+    width: 95%;
+  }
+
+  .enlaces{
+    text-align: center;
+    margin: 2%;
+  }
+  .botones{
+    text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5em 1em;
+    color: #7da2aa;
+    border: 0.068em solid #999;
+    border: 0 rgba(0,0,0,0);
+    background-color: #2d3035;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+
+  .sig{
+    width: 35%;
+  }
+
+  .sig a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .sig:hover{
+    color: blue;
+  }
+
+  .containerobra, .containerobraA, .containerobraC {
+    position: relative;
+    min-height: 90em;
+    width: 100%;
+    background-color: #FFFFFF;
+    right: 0;
+    border-left: 0.313em solid #1BD1E0;
+    -webkit-transition:  right 0.4s ease-in-out;
+    -moz-transition:  right 0.4s ease-in-out;
+    -ms-transition:  right 0.4s ease-in-out;
+    -o-transition:  right 0.4s ease-in-out;
+    transition:  right 0.4s ease-in-out;
+  }
+  .containerobraD, .containerobraDA, .containerobraDC {
+    position: relative;
+    min-height: 90em;
+    width: 100%;
+    background-color: #FFFFFF;
+    right: 0;
+    border-left: 0.313em solid #19D6B0;
+    -webkit-transition:  right 0.4s ease-in-out;
+    -moz-transition:  right 0.4s ease-in-out;
+    -ms-transition:  right 0.4s ease-in-out;
+    -o-transition:  right 0.4s ease-in-out;
+    transition:  right 0.4s ease-in-out;
+  }
+  .containerobraU, .containerobraUA, .containerobraUC {
+    position: relative;
+    min-height: 90em;
+    width: 100%;
+    background-color: #FFFFFF;
+    right: 0;
+    border-left: 0.313em solid #2290C9;
+    -webkit-transition:  right 0.4s ease-in-out;
+    -moz-transition:  right 0.4s ease-in-out;
+    -ms-transition:  right 0.4s ease-in-out;
+    -o-transition:  right 0.4s ease-in-out;
+    transition:  right 0.4s ease-in-out;
+  }
+  .containerAc {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    background-color: #1C3B5F;
+  }
+
+  .containerobra.open-sidebar {
+    right: 30em;
+  }
+  .containerobraD.open-sidebar {
+    right: 30em;
+  }
+  .containerobraA.open-sidebar {
+    right: 45em;
+  }
+  .containerobraDA.open-sidebar {
+    right: 45em;
+  }
+  .containerobraC.open-sidebar {
+    right: 30em;
+  }
+  .containerobraDC.open-sidebar {
+    right: 30em;
+  }
+  .containerobraU.open-sidebar {
+    right: 30em;
+  }
+  .containerobraUA.open-sidebar {
+    right: 45em;
+  }
+  .containerobraUC.open-sidebar {
+    right: 30em;
+  }
+  .swipe-area {
+    position: absolute;
+    width: 3.125em;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+  }
+  input[type="checkbox" i]{
+    float: left;
+  }
+  .main-content {
+    width: 100%;
+    height: 100%;
+    padding: 0.625em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+  }
+  .main-content .contentgrid, .main-content .contentgridD, .main-content .contentgridU{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-left: 22.5em;
+    width: 100%;
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid .cons h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+    /*text-shadow: 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa;
+    */
+  }
+  /*Construcciones*/
+  .containerobraA .informacion h1 a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.45em;
+    font-weight: normal;
+    padding-left: 69.5em;
+  }
+  .containerobraA .informacion h1 a:hover{
+    color: #1BD1E0;
+  }
+  .containerobra #data h3 a, .containerobraA #data h3 a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.65em;
+    font-weight: normal;
+  }
+  .containerobra #data h3 a:hover, .containerobraA #data h3 a:hover{
+    color: #1BD1E0;
+  }
+  #data h2{
+    font-size: 1em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+  }
+  #data h2 a{
+    padding-right: 1em;
+    text-decoration: none;
+    color: #7da2aa;
+  }
+  #data h2 a:hover{
+    padding-right: 1em;
+    text-decoration: none;
+    color: #1BD1E0;
+  }
+  #data ul{
+    margin-left: -2.45em;
+    margin-top: -1em;
+    list-style: none;
+    float: left;
+  }
+  #data ul li{
+    display: inline;
+  }
+  h3{
+    border-bottom: 0.063em solid #1BD1E0;
+  }
+  .contentgrid h2{
+    font-size: 1em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+  }
+  .contentgrid h2 a{
+    padding-right: 1em;
+    text-decoration: none;
+    color: #7da2aa;
+  }
+
+  .contentgrid h2 a:hover{
+    color: #1BD1E0;
+  }
+  .contentgrid th a{
+    font-size: 1.25em;
+    text-decoration: none;
+    font-family: 'GenericaB';
+    color: black;
+  }
+  .contentgrid th a:hover{
+    color: #1BD1E0;
+    cursor: pointer;
+    cursor: hand;
+  }
+  .contentgrid th:not(:first-child), .contentgrid td:not(:first-child){
+    padding-left: 10em;
+  }
+  .contentgrid td:last-child{
+    padding-left: 6em;
+  }
+  .contentgrid tr:first-child th{
+    border-bottom: 0.125em solid #1BD1E0;
+  }
+  .contentgrid tr:not(:first-child){
+    padding-top: 0.5em;
+  }
+  .contentgrid tr h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid ul{
+    margin-top: -0.5em;
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid ul li h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+    /*text-shadow: 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa;
+    */
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid ul li h1 a{
+    text-decoration: none;
+    color: black;
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid ul li h1 a:hover{
+    text-decoration: none;
+    color: #7da2aa;
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid ul li ul{
+    padding: 0;
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid ul li ul li{
+    display: inline;
+  }
+
+  .main-content .contentgrid .obra h1, .main-content .contentgrid .cons h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+    /*text-shadow: 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa;
+    */
+  }
+  /*Denuncias*/
+  .contentgridD h2{
+    font-size: 1em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+  }
+  .contentgridD h2 a{
+    padding-right: 1em;
+    text-decoration: none;
+    color: #7da2aa;
+  }
+
+  .contentgridD h2 a:hover{
+    color: #19D6B0;
+  }
+  .contentgridD th a{
+    font-size: 1.25em;
+    text-decoration: none;
+    font-family: 'GenericaB';
+    color: black;
+  }
+  .contentgridD th a:hover{
+    color: #19D6B0;
+    cursor: pointer;
+    cursor: hand;
+  }
+  .contentgridD th:not(:first-child), .contentgridD td:not(:first-child){
+    padding-left: 10em;
+  }
+  .contentgridD td:last-child{
+    padding-left: 6em;
+  }
+  .contentgridD tr:first-child th{
+    border-bottom: 0.125em solid #19D6B0;
+  }
+  .contentgridD tr:not(:first-child){
+    padding-top: 0.5em;
+  }
+  .contentgridD tr h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+  }
+  .main-content .contentgridD .obra h1, .main-content .contentgridD ul{
+    margin-top: -0.5em;
+  }
+  .main-content .contentgridD .obra h1, .main-content .contentgridD ul li h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+    /*text-shadow: 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa;
+    */
+  }
+  .main-content .contentgridD .obra h1, .main-content .contentgridD ul li h1 a{
+    text-decoration: none;
+    color: black;
+  }
+  .main-content .contentgridD .obra h1, .main-content .contentgridD ul li h1 a:hover{
+    text-decoration: none;
+    color: #7da2aa;
+  }
+  .main-content .contentgridD .obra h1, .main-content .contentgridD ul li ul{
+    padding: 0;
+  }
+  .main-content .contentgridD .obra h1, .main-content .contentgridD ul li ul li{
+    display: inline;
+  }
+  
+  .main-content .contentgridD p, .main-content .contentgridD p{
+    margin-top: 2%;
+    font-family: 'Generica';
+    width: 100%;
+    line-height: 175%;
+    color: #000000;
+  }
+  /*Usuarios*/
+  .contentgridU h2{
+    font-size: 1em;
+    color: #000000;
+    float: right;
+    font-family: 'GenericaB';
+  }
+  .contentgridU h2 a{
+    padding-right: 1em;
+    text-decoration: none;
+    color: #7da2aa;
+  }
+
+  .contentgridU h2 a:hover{
+    color: #2290C9;
+  }
+  .contentgridU th a{
+    font-size: 1.25em;
+    text-decoration: none;
+    font-family: 'GenericaB';
+    color: black;
+  }
+  .contentgridU th a:hover{
+    color: #2290C9;
+    cursor: pointer;
+    cursor: hand;
+  }
+  .contentgridU th:not(:first-child), .contentgridD td:not(:first-child){
+    padding-left: 10em;
+  }
+  .contentgridU td:last-child{
+    padding-left: 6em;
+  }
+  .contentgridU tr:first-child th{
+    border-bottom: 0.125em solid #2290C9;
+  }
+  .contentgridU tr:not(:first-child){
+    padding-top: 0.5em;
+  }
+  .contentgridU tr h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+  }
+  .main-content .contentgridU .obra h1, .main-content .contentgridU ul{
+    margin-top: -0.5em;
+  }
+  .main-content .contentgridU .obra h1, .main-content .contentgridU ul li h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+    /*text-shadow: 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa, 2px 0 0 #7da2aa;
+    */
+  }
+  .main-content .contentgridU .obra h1, .main-content .contentgridU ul li h1 a{
+    text-decoration: none;
+    color: black;
+  }
+  .main-content .contentgridU .obra h1, .main-content .contentgridU ul li h1 a:hover{
+    text-decoration: none;
+    color: #7da2aa;
+  }
+  .main-content .contentgridU .obra h1, .main-content .contentgridU ul li ul{
+    padding: 0;
+  }
+  .main-content .contentgridU .obra h1, .main-content .contentgridU ul li ul li{
+    display: inline;
+  }
+  
+  .main-content .contentgridU p, .main-content .contentgridU p{
+    margin-top: 2%;
+    font-family: 'Generica';
+    width: 100%;
+    line-height: 175%;
+    color: #000000;
+  }
+
+  .main-content .sidebar-toggle {
+    display: block;
+    position: relative;
+    padding-top: 0.188em;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+  }
+
+  .main-content .bar{
+    display: block;
+    width: 1.125em;
+    margin-bottom: 0.188em;
+    height: 0.125em;
+    background-color: #000;
+    border-radius: 0.063em;   
+  }
+  .main-content .bar:last-child{
+    margin-bottom: 0;   
+  } 
+
+  .main-content .bar:hover{
+    background-color: #7da2aa;
+    cursor: pointer; 
+    cursor: hand;
+  }
+
+  /*  
+  .botonsig{
+  background-color: #2290c9;
+  margin-top: 0.625em;
+  margin-bottom: 1.25em;
+  margin-right: 6.250em;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 12.5em;
+  height: 1.5em;
+  float: right;
+  padding-top: 0.5em;
+  overflow:hidden;
+  text-decoration: none;
+  }*/
+  #bottom{
+    bottom: 0;
+  }
+  .botonantU{
+    border-bottom: 0.125em solid #2290C9;
+    /*background-color: #2290c9;*/
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+    margin-right: 6.250em;
+    position: relative;
+    text-align: center;
+    color: #2290C9;
+    width: 16.5em;
+    height: 1.5em;
+    float: left;
+    padding-top: 0.5em;
+    overflow:hidden;
+    text-decoration: none;
+  }
+  .botonantD{
+    border-bottom: 0.125em solid #19D6B0;
+    /*background-color: #2290c9;*/
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+    margin-right: 6.250em;
+    position: relative;
+    text-align: center;
+    color: #19D6B0;
+    width: 16.5em;
+    height: 1.5em;
+    float: left;
+    padding-top: 0.5em;
+    overflow:hidden;
+    text-decoration: none;
+  }
+  .botonant{
+    border-bottom: 0.125em solid #1BD1E0;
+    /*background-color: #2290c9;*/
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+    margin-right: 6.250em;
+    position: relative;
+    text-align: center;
+    color: #1BD1E0;
+    width: 16.5em;
+    height: 1.5em;
+    float: left;
+    padding-top: 0.5em;
+    overflow:hidden;
+    text-decoration: none;
+  }
+  .prev, .next{
+    display: inline;
+    list-style-type: none;
+  }
+
+  .contentgridU .prev a, .contentgridU .next a{
+    text-decoration: none;
+    color: #2290C9;
+  }
+  .contentgridU .disabled a:hover{
+    cursor: default;
+    color: #2290C9;
+    text-decoration: none;
+  }
+  .contentgridD .prev a, .contentgridD .next a, .botonantD .prev a, .botonantD .next a{
+    text-decoration: none;
+    color: #19D6B0;
+  }
+  .contentgridD .disabled a:hover{
+    cursor: default;
+    color: #19D6B0;
+    text-decoration: none;
+  }
+  .prev a, .next a{
+    text-decoration: none;
+    color: #1BD1E0;
+  }
+  .prev a:hover, .next a:hover{
+    color: black;
+  }
+  .disabled a:hover{
+    cursor: default;
+    color: #1BD1E0;
+    text-decoration: none;
+  }
+  .obra, .cons{
+    background-color: white;
+    margin: 0.625em;
+    position: relative;
+    text-align: center;
+    /*margin-top: 125px;
+    margin-right: 45px;
+    padding-bottom: 50px;
+    padding: 20px;*/
+    width: 18.750em;
+    height: 18.750em;
+    float: left;
+    overflow:hidden;
+  }
+  .cons.none{
+    display: none;
+  }
+  .obra .imagen, .cons .imagen {
+    width: 18.750em;
+    height: 12.500em;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .imagen img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .cons .imagen img {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .imagen .mask, .imagen .datos{
+    width: 18.750em;
+    height: 12.500em;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .imagen .datos p{
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .imagen .mask {
+    background-color: rgba(34,144,201, 0.7);
+    width: 18.750em;
+    padding: 3.750em;
+    height: 18.750em;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: translate(265px, 145px) rotate(45deg);
+    -moz-transform: translate(265px, 145px) rotate(45deg);
+    -o-transform: translate(265px, 145px) rotate(45deg);
+    -ms-transform: translate(265px, 145px) rotate(45deg);
+    transform: translate(265px, 145px) rotate(45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .imagen:hover .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transform: translate(-80px, -125px) rotate(45deg);
+    -moz-transform: translate(-80px, -125px) rotate(45deg);
+    -o-transform: translate(-80px, -125px) rotate(45deg);
+    -ms-transform: translate(-80px, -125px) rotate(45deg);
+    transform: translate(-80px, -125px) rotate(45deg);
+  }
+  .imagen p {
+    -webkit-transform: translate(-200px, 200px);
+    -moz-transform: translate(-200px, 200px);
+    -o-transform: translate(-200px, 200px);
+    -ms-transform: translate(-200px, 200px);
+    transform: translate(-200px, 200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .imagen:hover p {
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  .imagen a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.438em 0.875em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 0.063em #000;
+    -moz-box-shadow: 0 0 0.063em #000;
+    box-shadow: 0 0 0.125em #000;
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    -o-transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
+    transform: translate(0px, 100px);
+    -webkit-transition: all 0.2s 0.1s ease-in-out;
+    -moz-transition: all 0.2s 0.1s ease-in-out;
+    -o-transition: all 0.2s 0.1s ease-in-out;
+    -ms-transition: all 0.2s 0.1s ease-in-out;
+    transition: all 0.2s 0.1s ease-in-out;
+  }
+  .imagen a:hover{
+    background-color: #000000;
+    color: white;
+  }
+  .imagen:hover a {
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .obra .expandir{
+    background-color: #7da2aa;
+    margin-top: 1.250em;
+    margin-right: -1.313em;
+    margin-left: -1.313em;
+    margin-bottom: -1.313em;
+    padding-bottom: 1.250em;
+    cursor: pointer;
+    cursor: hand;
+  }
+  .obra #datos, .cons #datos{
+    float: right;
+    margin-right: 6.250em;
+  }
+  .obra #foto, .cons #foto{
+    float: left;
+  }
+  .obra .expandir div, .cons .expandir div{
+    display: none;
+  }
+  .obra div p, .cons div p{
+    color: black;
+  }
+  .obra a, .cons a{
+    text-decoration: none;
+    color: black;
+  }
+  .navegadorobra{
+    float: inherit;
+    padding-top: 5%;
+  }
+  .navegadorobra ul
+  {
+    list-style:none;
+    float:left;
+    width:95%;
+  }
+
+  .contentinfo{
+    margin: 3.5em;
+  }
+
+  .informacion #data{
+    padding: 0.25em;
+    padding-top: -0.1em;
+    float: left;
+    overflow: hidden;
+  }
+
+  .informacion div{
+    float: left;
+  }
+  .containerobraD .informacion h1, .containerobraDA .informacion h1, .containerobraDC .informacion h1{
+    width: 100%;
+    padding-left: 0.25em;
+    overflow: hidden;
+    border-bottom: 0.063em solid #19D6B0;
+  }
+  .containerobraD .informacion #info, .containerobraDA .informacion #info, .containerobraDC .informacion #info{
+    width: 100%;
+    height: 50em;
+    /*border: 0.125em solid #19D6B0;*/
+    padding: 0.25em;
+    margin-bottom: 1em;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+  .containerobra .informacion h1, .containerobraA .informacion h1, .containerobraC .informacion h1{
+    width: 100%;
+    padding-left: 0.25em;
+    overflow: hidden;
+    border-bottom: 0.063em solid #1BD1E0;
+  }
+  .containerobra .informacion #info, .containerobraA .informacion #info, .containerobraC .informacion #info{
+    width: 100%;
+    height: 50em;
+    /*border: 0.125em solid #1BD1E0;*/
+    padding: 0.25em;
+    margin-bottom: 1em;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+  .imageninfo{
+    border: 0.125em solid #1BD1E0;
+    padding: 0.25em;
+    height: 31.250em;
+    width: 31.250em;
+    float: left;
+    position: relative;
+    overflow: hidden; 
+  }
+  .imageninfo img{
+    width: 100%;
+  }
+  .left { 
+    float:left; 
+    width:50%; 
+    clear:left; 
+  }
+
+  .right { 
+    float:right; 
+    width:50%; 
+    clear:right 
+  }
+
+  .navegadorobra ul li{
+    display: inline;
+  }
+  .navegadorobra ul li a
+  {
+    color: black;
+    float: right;
+    padding-right: 1%; 
+    text-decoration:none;
+  }
+  .navegadorobra ul li a:hover
+  {
+    color: #7da2aa;
+    cursor: pointer; 
+    cursor: hand;
+  }
+  .navegadorobra ul li a#izq
+  {
+    float: left;
+  }
+  .navegadorobra ul li a div
+  {
+    float: left;
+    margin-top: -4.688em;
+    margin-left: -2.625em;
+    content: url("/obras/webroot/img/logoN.png");
+  }
+  .navegadorobra ul li a div:hover
+  {
+    content: url("/obras/webroot/img/logo2.png");
+    cursor: pointer; 
+    cursor: hand;
+  }
+
+  .informacion .fotoDenuncia
+  {
+    width: 62.500em;
+    height: 31.250em;
+  }
+
+  .informacion .fotoDenuncia img
+  {
+    max-width: 100%;
+    max-height: 100%;
+  }
+/*}*/
+/*@media only screen and (min-width: 641px) and (max-width: 960px) {
+
+  .interior, .hinterior{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: helvetica;
+    font-weight: 100;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  .titulo{
+    font-size: 120%;
+    color: white;
+    float: inherit;
+  }
+
+  .descripcion{
+    text-align: center;
+    padding: 2%;
+    width: 95%;
+  }
+
+  .enlaces{
+    text-align: center;
+    margin: 2%;
+  }
+  .botones{
+    text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5em 1em;
+    color: #7da2aa;
+    border: 0.068em solid #999;
+    border: 0 rgba(0,0,0,0);
+    background-color: #2d3035;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+
+  .sig{
+    width: 35%;
+  }
+
+  .sig a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .sig:hover{
+    color: blue;
+  }
+
+  .containerobra {
+    position: relative;
+    height: 42.5em;
+    width: 100%;
+    background-color: #FFFFFF;
+    right: 0;
+    border-left: 0.313em solid #2290C9;
+    -webkit-transition:  top 0.4s ease-in-out;
+    -moz-transition:  top 0.4s ease-in-out;
+    -ms-transition:  top 0.4s ease-in-out;
+    -o-transition:  top 0.4s ease-in-out;
+    transition:  top 0.4s ease-in-out;
+  }
+  .containerobraD {
+    position: relative;
+    height: 42.5em;
+    width: 100%;
+    background-color: #FFFFFF;
+    right: 0;
+    border-left: 0.313em solid #19D6B0;
+    -webkit-transition:  top 0.4s ease-in-out;
+    -moz-transition:  top 0.4s ease-in-out;
+    -ms-transition:  top 0.4s ease-in-out;
+    -o-transition:  top 0.4s ease-in-out;
+    transition:  top 0.4s ease-in-out;
+  }
+  .containerAc {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    background-color: #1C3B5F;
+  }
+
+  .containerobra.open-sidebar {
+    top: 9.375em;
+
+  }
+  .containerobraD.open-sidebar {
+    top: 9.375em;
+
+  }
+  .swipe-area {
+    position: absolute;
+    width: 0.938em;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .main-content {
+    width: 100%;
+    height: 100%;
+    padding: 0.625em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+  }
+  .main-content .contentgrid{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-right: 3em;
+    margin-top: 7em;
+    padding-left: 13.5em;
+    width: 100%;
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid .cons h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+    
+  }
+  .main-content .contentgrid p{
+    margin-top: 2%;
+    font-family: 'Generica';
+    width: 100%;
+    line-height: 175%;
+    color: #000000;
+  }
+  .main-content .sidebar-toggle {
+    display: block;
+    position: relative;
+    padding-top: 0.188em;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+  }
+
+  .main-content .bar{
+    display: block;
+    width: 1.125em;
+    margin-bottom: 0.188em;
+    height: 0.125em;
+    background-color: #000;
+    border-radius: 0.063em;   
+  }
+  .main-content .bar:last-child{
+    margin-bottom: 0;   
+  } 
+
+  .main-content .bar:hover{
+    background-color: #7da2aa;
+    cursor: pointer; 
+    cursor: hand;
+  }
+
+  .botonsig{
+    background-color: #2290c9;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+    margin-right: 6.250em;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 12.5em;
+    height: 1.5em;
+    float: right;
+    padding-top: 0.5em;
+    overflow:hidden;
+    text-decoration: none;
+  }
+  .botonant{
+    background-color: #2290c9;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+    margin-right: 6.250em;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 12.5em;
+    height: 1.5em;
+    float: left;
+    padding-top: 0.5em;
+    overflow:hidden;
+    text-decoration: none;
+  }
+  .prev, .next{
+    list-style-type: none;
+  }
+  .prev a, .next a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .obra, .cons{
+    background-color: white;
+    margin: 0.625em;
+    position: relative;
+    text-align: center;
+    
+    width: 9.375em;
+    height: 9.375em;
+    float: left;
+    overflow:hidden;
+  }
+  .obra .imagen, .cons .imagen {
+    width: 9.375em;
+    height: 6.250em;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .imagen img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .cons .imagen img {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .imagen .mask, .imagen .datos{
+    width: 9.375em;
+    height: 6.250em;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .imagen .datos p{
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .imagen .mask {
+    background-color: rgba(34,144,201, 0.7);
+    width: 18.750em;
+    padding: 3.750em;
+    height: 18.750em;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: translate(265px, 145px) rotate(45deg);
+    -moz-transform: translate(265px, 145px) rotate(45deg);
+    -o-transform: translate(265px, 145px) rotate(45deg);
+    -ms-transform: translate(265px, 145px) rotate(45deg);
+    transform: translate(265px, 145px) rotate(45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .imagen:hover .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transform: translate(-80px, -125px) rotate(45deg);
+    -moz-transform: translate(-80px, -125px) rotate(45deg);
+    -o-transform: translate(-80px, -125px) rotate(45deg);
+    -ms-transform: translate(-80px, -125px) rotate(45deg);
+    transform: translate(-80px, -125px) rotate(45deg);
+  }
+  .imagen p {
+    -webkit-transform: translate(-200px, 200px);
+    -moz-transform: translate(-200px, 200px);
+    -o-transform: translate(-200px, 200px);
+    -ms-transform: translate(-200px, 200px);
+    transform: translate(-200px, 200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .imagen:hover p {
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  .imagen a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.438em 0.875em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 0.063em #000;
+    -moz-box-shadow: 0 0 0.063em #000;
+    box-shadow: 0 0 0.125em #000;
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    -o-transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
+    transform: translate(0px, 100px);
+    -webkit-transition: all 0.2s 0.1s ease-in-out;
+    -moz-transition: all 0.2s 0.1s ease-in-out;
+    -o-transition: all 0.2s 0.1s ease-in-out;
+    -ms-transition: all 0.2s 0.1s ease-in-out;
+    transition: all 0.2s 0.1s ease-in-out;
+  }
+  .imagen a:hover{
+    background-color: #000000;
+    color: white;
+  }
+  .imagen:hover a {
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .obra .expandir{
+    background-color: #7da2aa;
+    margin-top: 1.250em;
+    margin-right: -1.313em;
+    margin-left: -1.313em;
+    margin-bottom: -1.313em;
+    padding-bottom: 1.250em;
+    cursor: pointer;
+    cursor: hand;
+  }
+  .obra #datos, .cons #datos{
+    float: right;
+    margin-right: 6.250em;
+  }
+  .obra #foto, .cons #foto{
+    float: left;
+  }
+  .obra .expandir div, .cons .expandir div{
+    display: none;
+  }
+  .obra div p, .cons div p{
+    color: black;
+  }
+  .obra a, .cons a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .contentinfo{
+    margin: 3.5em;
+  }
+
+  .informacion #data{
+    padding: 0.25em;
+    padding-top: -0.1em;
+    float: left;
+    overflow: hidden;
+  }
+
+  .informacion div{
+    float: left;
+  }
+  .informacion h1{
+    width: 100%;
+    padding-left: 0.25em;
+    overflow: hidden;
+    border: 0.063em solid #2290C9;
+  }
+  .informacion #info{
+    width: 100%;
+    height: 50em;
+    
+    padding: 0.25em;
+    margin-bottom: 1em;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+  .imageninfo{
+    border: 0.125em solid #2290C9;
+    padding: 0.25em;
+    height: 31.250em;
+    width: 31.250em;
+    float: left;
+    position: relative;
+    overflow: hidden; 
+  }
+  .imageninfo img{
+    width: 100%;
+  }
+  .left { 
+    float:left; 
+    width:50%; 
+    clear:left; 
+  }
+
+  .right { 
+    float:right; 
+    width:50%; 
+    clear:right 
+  }
+
+  .navegadorobra{
+    background-color: white;
+    z-index: 150;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.125em;
+  }
+
+  .navegadorobraD{
+    border-left: 0.313em solid #19D6B0;
+  }
+  .navegadorobraC{
+    border-left: 0.313em solid #2290C9;
+  }
+  .navegadorobraDS{
+    box-shadow: 0 2px 3px rgba(0, 0 , 0, 0.4);
+  }
+  .navegadorobraCS{
+    box-shadow: 0 2px 3px rgba(0, 0 , 0, 0.4);
+  }
+  .navegadorobra ul
+  {
+    list-style:none;
+    float:left;
+    width:93%;
+  }
+
+  .navegadorobra ul li{
+    display: inline;
+  }
+  .navegadorobra ul li a
+  {
+    color: black;
+    float: right;
+    padding-right: 1%; 
+    text-decoration:none;
+  }
+  .navegadorobra ul li a:hover
+  {
+    color: #7da2aa;
+    cursor: pointer; 
+    cursor: hand;
+  }
+  .navegadorobra ul li a#izq
+  {
+    float: left;
+  }
+  .navegadorobra ul li a div
+  {
+    float: left;
+    margin-top: -0.688em;
+    margin-left: -2.188em;
+    content: url("/obras/webroot/img/logoTN.png");
+  }
+  .navegadorobra ul li a div:hover
+  {
+    content: url("/obras/webroot/img/logoTV.png");
+    cursor: pointer; 
+    cursor: hand;
+  }
+  .menu{
+    display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+
+  .interior, .hinterior{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: helvetica;
+    font-weight: 100;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  .titulo{
+    font-size: 120%;
+    color: white;
+    float: inherit;
+  }
+
+  .descripcion{
+    text-align: center;
+    padding: 2%;
+    width: 95%;
+  }
+
+  .enlaces{
+    text-align: center;
+    margin: 2%;
+  }
+  .botones{
+    text-shadow: 0 0.063em 0.063em rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5em 1em;
+    color: #7da2aa;
+    border: 0.068em solid #999;
+    border: 0 rgba(0,0,0,0);
+    background-color: #2d3035;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+
+  .sig{
+    width: 35%;
+  }
+
+  .sig a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .sig:hover{
+    color: blue;
+  }
+
+  .containerobra {
+    position: relative;
+    height: 42.5em;
+    width: 100%;
+    background-color: #FFFFFF;
+    right: 0;
+    border-left: 0.313em solid #2290C9;
+    -webkit-transition:  top 0.4s ease-in-out;
+    -moz-transition:  top 0.4s ease-in-out;
+    -ms-transition:  top 0.4s ease-in-out;
+    -o-transition:  top 0.4s ease-in-out;
+    transition:  top 0.4s ease-in-out;
+  }
+  .containerobraD {
+    position: relative;
+    height: 42.5em;
+    width: 100%;
+    background-color: #FFFFFF;
+    right: 0;
+    
+    -webkit-transition:  top 0.4s ease-in-out;
+    -moz-transition:  top 0.4s ease-in-out;
+    -ms-transition:  top 0.4s ease-in-out;
+    -o-transition:  top 0.4s ease-in-out;
+    transition:  top 0.4s ease-in-out;
+  }
+  .containerAc {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    background-color: #1C3B5F;
+  }
+
+  .containerobra.open-sidebar {
+    top: 9.375em;
+
+  }
+  .containerobraD.open-sidebar {
+    top: 9.375em;
+
+  }
+  .swipe-area {
+    position: absolute;
+    width: 0.938em;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .main-content {
+    width: 100%;
+    height: 100%;
+    padding: 0.625em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+  }
+  .main-content .contentgrid{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-right: 3em;
+    margin-top: 7em;
+    padding-left: 13.5em;
+    width: 100%;
+  }
+  .main-content .contentgrid .obra h1, .main-content .contentgrid .cons h1{
+    font-size: 1.25em;
+    color: #000000;
+    float: left;
+    font-family: 'GenericaB';
+    
+  }
+  .main-content .contentgrid p{
+    margin-top: 2%;
+    font-family: 'Generica';
+    width: 100%;
+    line-height: 175%;
+    color: #000000;
+  }
+  .main-content .sidebar-toggle {
+    display: block;
+    float: right;
+    position: relative;
+    padding-top: 0.188em;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+  }
+
+  .main-content .bar{
+    display: block;
+    width: 1.125em;
+    margin-bottom: 0.188em;
+    height: 0.125em;
+    background-color: #000;
+    border-radius: 0.063em;   
+  }
+  .main-content .bar:last-child{
+    margin-bottom: 0;   
+  } 
+
+  .main-content .bar:hover{
+    background-color: #7da2aa;
+    cursor: pointer; 
+    cursor: hand;
+  }
+
+  .botonsig{
+    background-color: #2290c9;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+    margin-right: 6.250em;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 12.5em;
+    height: 1.5em;
+    float: right;
+    padding-top: 0.5em;
+    overflow:hidden;
+    text-decoration: none;
+  }
+  .botonant{
+    background-color: #2290c9;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+    margin-right: 6.250em;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 12.5em;
+    height: 1.5em;
+    float: left;
+    padding-top: 0.5em;
+    overflow:hidden;
+    text-decoration: none;
+  }
+  .prev, .next{
+    list-style-type: none;
+  }
+  .prev a, .next a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .obra, .cons{
+    background-color: white;
+    margin: 0.625em;
+    position: relative;
+    text-align: center;
+    
+    width: 9.375em;
+    height: 9.375em;
+    float: left;
+    overflow:hidden;
+  }
+  .obra .imagen, .cons .imagen {
+    width: 9.375em;
+    height: 6.250em;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .imagen img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .cons .imagen img {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .imagen .mask, .imagen .datos{
+    width: 9.375em;
+    height: 6.250em;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .imagen .datos p{
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .imagen .mask {
+    background-color: rgba(34,144,201, 0.7);
+    width: 18.750em;
+    padding: 3.750em;
+    height: 18.750em;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: translate(265px, 145px) rotate(45deg);
+    -moz-transform: translate(265px, 145px) rotate(45deg);
+    -o-transform: translate(265px, 145px) rotate(45deg);
+    -ms-transform: translate(265px, 145px) rotate(45deg);
+    transform: translate(265px, 145px) rotate(45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .imagen:hover .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transform: translate(-80px, -125px) rotate(45deg);
+    -moz-transform: translate(-80px, -125px) rotate(45deg);
+    -o-transform: translate(-80px, -125px) rotate(45deg);
+    -ms-transform: translate(-80px, -125px) rotate(45deg);
+    transform: translate(-80px, -125px) rotate(45deg);
+  }
+  .imagen p {
+    -webkit-transform: translate(-200px, 200px);
+    -moz-transform: translate(-200px, 200px);
+    -o-transform: translate(-200px, 200px);
+    -ms-transform: translate(-200px, 200px);
+    transform: translate(-200px, 200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .imagen:hover p {
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  .imagen a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.438em 0.875em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 0.063em #000;
+    -moz-box-shadow: 0 0 0.063em #000;
+    box-shadow: 0 0 0.125em #000;
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    -o-transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
+    transform: translate(0px, 100px);
+    -webkit-transition: all 0.2s 0.1s ease-in-out;
+    -moz-transition: all 0.2s 0.1s ease-in-out;
+    -o-transition: all 0.2s 0.1s ease-in-out;
+    -ms-transition: all 0.2s 0.1s ease-in-out;
+    transition: all 0.2s 0.1s ease-in-out;
+  }
+  .imagen a:hover{
+    background-color: #000000;
+    color: white;
+  }
+  .imagen:hover a {
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .obra .expandir{
+    background-color: #7da2aa;
+    margin-top: 1.250em;
+    margin-right: -1.313em;
+    margin-left: -1.313em;
+    margin-bottom: -1.313em;
+    padding-bottom: 1.250em;
+    cursor: pointer;
+    cursor: hand;
+  }
+  .obra #datos, .cons #datos{
+    float: right;
+    margin-right: 6.250em;
+  }
+  .obra #foto, .cons #foto{
+    float: left;
+  }
+  .obra .expandir div, .cons .expandir div{
+    display: none;
+  }
+  .obra div p, .cons div p{
+    color: black;
+  }
+  .obra a, .cons a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .contentinfo{
+    margin: 3.5em;
+  }
+
+  .informacion #data{
+    padding: 0.25em;
+    padding-top: -0.1em;
+    float: left;
+    overflow: hidden;
+  }
+
+  .informacion div{
+    float: left;
+  }
+  .informacion h1{
+    width: 100%;
+    padding-left: 0.25em;
+    overflow: hidden;
+    border: 0.063em solid #2290C9;
+  }
+  .informacion #info{
+    width: 100%;
+    height: 50em;
+    
+    padding: 0.25em;
+    margin-bottom: 1em;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+  .imageninfo{
+    border: 0.125em solid #2290C9;
+    padding: 0.25em;
+    height: 31.250em;
+    width: 31.250em;
+    float: left;
+    position: relative;
+    overflow: hidden; 
+  }
+  .imageninfo img{
+    width: 100%;
+  }
+  .left { 
+    float:left; 
+    width:50%; 
+    clear:left; 
+  }
+
+  .right { 
+    float:right; 
+    width:50%; 
+    clear:right 
+  }
+
+  .navegadorobra{
+    background-color: white;
+    z-index: 150;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.125em;
+  }
+
+  .navegadorobraD{
+    background-color: #19D6B0;
+  }
+  .navegadorobraC{
+    border-left: 0.313em solid #2290C9;
+  }
+  .navegadorobraDS{
+    box-shadow: 0 2px 3px rgba(0, 0 , 0, 0.4);
+  }
+  .navegadorobraCS{
+    box-shadow: 0 2px 3px rgba(0, 0 , 0, 0.4);
+  }
+  .navegadorobra ul
+  {
+    list-style:none;
+    float:left;
+    width:87%;
+  }
+
+  .navegadorobra ul li{
+    display: inline;
+  }
+  .navegadorobra ul li a
+  {
+    color: black;
+    float: right;
+    padding-right: 1%; 
+    text-decoration:none;
+  }
+  .navegadorobra ul li a:hover
+  {
+    color: #7da2aa;
+    cursor: pointer; 
+    cursor: hand;
+  }
+  .navegadorobra ul li a#izq
+  {
+    float: left;
+  }
+  .navegadorobra ul li a div
+  {
+    width: 80%;
+    float: left;
+    margin-top: -0.388em;
+    padding-left: 0.625em;
+    margin-left: -2.188em;
+    content: url("/obras/webroot/img/logoTN.png");
+  }
+  .navegadorobra ul li a div:hover
+  {
+    content: url("/obras/webroot/img/logoTV.png");
+    cursor: pointer; 
+    cursor: hand;
+  }
+  .menu{
+    display: none;
+  }
+  #izqM{
+    display: none;
+  }
+  
+  }
+}*/
